@@ -10,7 +10,7 @@
 
 ## Установка
 
-Клонируйте репозиторий git clone <https://github.com/MaximSavelev/Parser.git/>
+Клонируйте репозиторий с помощью команды  git clone <https://github.com/MaximSavelev/Parser.git/>
 
 ## Настройка
 Для работы базы данных PostgreSQL в файле database.properties необходимо указать:
