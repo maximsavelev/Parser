@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane id="box" prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.Controller">
+    <TableView id="table" fx:id="table" layoutX="26.0" layoutY="111.0" prefHeight="281.0" prefWidth="466.0">
+        <columns>
+            <TableColumn id="count" fx:id="count" prefWidth="84.0" text="количество" />
+            <TableColumn id="word" fx:id="word" prefWidth="380.0" resizable="false" text="слово" />
+        </columns>
+    </TableView>
+    <TextField fx:id="url" layoutX="26.0" layoutY="27.0" prefHeight="25.0" prefWidth="255.0" promptText="Введи адрес на страницу" />
+    <Button fx:id="buttonParse" layoutX="299.0" layoutY="27.0" mnemonicParsing="false" onAction="#parseWord" text="Получить список слов" />
+    <Button fx:id="saveButton" layoutX="299.0" layoutY="72.0" mnemonicParsing="false" onAction="#saveToDatabase" text="Сохранить слова в базу данных" />
+    <TextField fx:id="tableName" layoutX="26.0" layoutY="72.0" prefHeight="25.0" prefWidth="255.0" promptText="Введите название базы данных" />
+    <Text fx:id="textField" layoutX="63.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="340.13671875" />
+</Pane>
